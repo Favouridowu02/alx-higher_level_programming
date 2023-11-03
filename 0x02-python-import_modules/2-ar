@@ -1,0 +1,19 @@
+#!/usr/bin/python3
+
+import sys
+i = 0
+while sys.argv[i]:
+    i = i + 1
+print("{}".format(i), end=" ")
+if i == 1:
+    print("argument", end="")
+else:
+    print("arguments", end="")
+if i > 0:
+    print(": ", end="")
+else:
+    print(".")
+i = 1
+while sys.argv[i]:
+    print("{}: {}".format(i, sys.argv[i]))
+    i = i + 1
