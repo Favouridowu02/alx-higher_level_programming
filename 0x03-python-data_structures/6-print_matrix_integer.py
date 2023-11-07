@@ -10,5 +10,5 @@ def print_matrix_integer(matrix=[[]]):
             for j in matrix[i]:
                 print("{:d}".format(j), end="")
                 if matrix[i].index(j) < len(matrix[i]) - 1:
-                    print(" ", end="") 
+                    print(" ", end="")
             print()
