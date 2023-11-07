@@ -9,6 +9,6 @@ def print_matrix_integer(matrix=[[]]):
             i = matrix.index(i)
             for j in matrix[i]:
                 print("{:d}".format(j), end="")
-                if matrix[i].index(j) < len(matrix[i]):
+                if matrix[i].index(j) < len(matrix[i]) - 1:
                     print(" ", end="") 
             print()
