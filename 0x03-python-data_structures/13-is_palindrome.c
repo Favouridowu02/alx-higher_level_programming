@@ -1,52 +1,57 @@
-#include "lists.h"
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
+#include "lists.h"
+size_t listint_len(const listint_t *h);
 
 /**
- * is_palindrome - a function in C that checks if a singly linked
- * list is a palindrome.
- * @head: a pointer to the pointer of the linked list
- * Return: 0 if it is not a palindrome, 1 if it is a palindrome
- */
+  * is_palindrome - Checks if a singly linked list is a palindrome
+  * @head: The head of the singly linked list
+  *
+  * Return: 0 if it is not a palindrome, 1 if it is a palindrome
+  */
 int is_palindrome(listint_t **head)
 {
-	int *table;
-	listint_t *current;
-	int i = 0;
-	int check = 0;
-	int k;
+    listint_t *start = NULL, *end = NULL;
+    unsigned int i = 0, len = 0, len_cyc = 0, len_list = 0;
 
-	current = *head;
-	while (current != NULL)
-	{
-		i++;
-		current = current->next;
-	}
-	table = malloc(sizeof(int) * i);
-	if (table == NULL)
-	{
-		return (0);
-	}
-	current = *head;
-	i = 0;
-	while (current != NULL)
-	{
-		table[i] = current->n;
-		i++;
-		current = current->next;
-	}
-	k = i / 2;
+    if (head == NULL)
+        return (0);
 
-	for (int n = 0; n < k; n++, i--)
+    if (*head == NULL)
+        return (1);
+    
+    start = *head;
+    len = listint_len(start);
+    len_cyc = len * 2;
+    len_list = len_cyc - 2;
+    end = *head;
+
+    for (; i < len_cyc; i = i + 2)
+    {
+        if (start[i].n != end[len_list].n)
+            return (0);
+
+        len_list = len_list - 2;
+    }
+
+    return (1);
+}
+
+/**
+  * slistint_len - Counts the number of elements in a linked list
+  * @h: The linked list to count
+  *
+  * Return: Number of elements in the linked list
+  */
+size_t listint_len(const listint_t *h)
+{
+	int lenght = 0;
+
+	while (h != NULL)
 	{
-		if (table[n] == table[i - 1])
-			check = 1;
-		else
-		{
-			check = 0;
-			break;
-		}
+		++lenght;
+		h = h->next;
 	}
-	free(table);
-	return (check);
+
+	return (lenght);
 }
