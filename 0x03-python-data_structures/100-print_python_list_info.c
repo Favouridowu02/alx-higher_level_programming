@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <Python.h>
-#include <time.h>
+#include <pytime.h>
 
 /**
  * print_python_list_info - shows info about Python lists
