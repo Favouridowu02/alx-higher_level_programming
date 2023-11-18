@@ -7,7 +7,8 @@ def print_sorted_dictionary(a_dictionary):
 
     Return: None
     """
-    key =  list(a_dictionary.keys())
+    key = list(a_dictionary.keys())
     key.sort()
-    print(f"{key}")
+    for i in key:
+        print("{:s}: {}".format(i, a_dictionary[i]))
     #print(" \n".join(str(a_dictionary[x]) for x in key))
