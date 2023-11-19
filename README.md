@@ -7,10 +7,10 @@ Welcome to the exciting world of High-Level Programming with Python! This reposi
 ## Table of Contents
 
 - [0x00.Python-Hello,World](https://github.com/Favouridowu02/alx-higher_level_programming/tree/master/0x00-python-hello_world)
-- [0x01.Python-if/else,loops,functions](#0x01.Python-if/else,loops,functions)
-- [0x02-python-import modules](#0x02-python-import_modules)
-- [0x03-python-data structures](#0x03-python-data_structures)
-- [0x04-python-more data structures](#0x04-python-more_data_structures)i
+- [0x01.Python-if/else,loops,functions](https://github.com/Favouridowu02/alx-higher_level_programming/tree/master/0x01-python-if_else_loops_functions)
+- [0x02-python-import modules](https://github.com/Favouridowu02/alx-higher_level_programming/tree/master/0x02-python-import_modules)
+- [0x03-python-data structures](https://github.com/Favouridowu02/alx-higher_level_programming/tree/master/0x03-python-data_structures)
+- [0x04-python-more data structures](https://github.com/Favouridowu02/alx-higher_level_programming/tree/master/0x04-python-more_data_structures)
 
 ## Introduction
 
