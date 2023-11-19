@@ -6,7 +6,7 @@ Welcome to the exciting world of High-Level Programming with Python! This reposi
 
 ## Table of Contents
 
-- [0x00.Python-Hello,World](#0x00.Python-Hello,World)
+- [0x00.Python-Hello,World](tree/master/0x00-python-hello_world)
 - [0x01.Python-if/else,loops,functions](#0x01.Python-if/else,loops,functions)
 - [0x02-python-import modules](#0x02-python-import_modules)
 - [0x03-python-data structures](#0x03-python-data_structures)
