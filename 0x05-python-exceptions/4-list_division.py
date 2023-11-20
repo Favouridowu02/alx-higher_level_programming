@@ -9,8 +9,22 @@ def list_division(my_list_1, my_list_2, list_length):
 
     Return: new list (length = list_length) with all divisions
     """
-    while len(my_list_1) < list_length:
-        my_list_1.append(0)
-    while len(my_list_2) < list_length:
-        my_list_2.append(0)
+    new_list = []
+    i = 0
 
+    while i < list_length:
+        try:
+            num = my_list_1[i] / my_list_2[i]
+            new_list.append(num)
+        except TypeError:
+            print("wrong type")
+            new_list.append(0)
+        except ZeroDivisionError:
+            print("division by 0")
+            new_list.append(0)
+        except IndexError:
+            print("out of range")
+            new_list.append(0)
+        finally:
+            i += 1
+    return new_list
