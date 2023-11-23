@@ -49,3 +49,11 @@ class Square:
                 self.__size = size
         else:
             raise TypeError("size must be an integer")
+
+    def my_print(self):
+        """ prints in stdout the square with the character #"""
+        if self.size == 0:
+            print()
+            return
+        for i in range(self.size):
+            print("{}".format("#" * self.size))
