@@ -12,9 +12,11 @@ class Rectangle:
         self.width = width
 
     def __str__(self):
-        """ print the rectangle with the character #"""
+        """ print the rectangle with the character #
+            printable string representation of the rectangle
+        """
         if (self.height == 0 or self.width == 0):
-            print("")
+            return 0
         i = 0
         while i < self.height:
             print("#" * self.width, end="")
