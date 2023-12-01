@@ -3,6 +3,7 @@
 Defines a class Rectangle
 """
 
+
 class Rectangle:
     """Representation of a rectangle"""
     def __init__(self, width=0, height=0):
@@ -17,7 +18,7 @@ class Rectangle:
 
     @width.setter
     def width(self, value):
-        """setter for the private instance attribute width"""   
+        """setter for the private instance attribute width"""
         if type(value) is not int:
             raise TypeError("width must be an integer")
         if value < 0:
