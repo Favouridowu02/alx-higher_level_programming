@@ -21,10 +21,12 @@ class Rectangle:
                                     for j in range(self.__height))
         return string
 
-    def __repr(self):
+    def __repr__(self):
+        """ 
+        return a string representation of the rectangle to be able to recreate
+        a new instance by using eval()
         """
-        """
-        print(Rectangle)
+        return "Rectangle(" + str(self.width) + ", " + str(self.height) + ")"
 
     @property
     def width(self):
