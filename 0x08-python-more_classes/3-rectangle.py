@@ -15,15 +15,10 @@ class Rectangle:
         """ print the rectangle with the character #
             printable string representation of the rectangle
         """
-        if (self.height == 0 or self.width == 0):
-            return 0
-        i = 0
-        while i < self.height:
-            print("#" * self.width, end="")
-            if i != self.height - 1:
-                print("")
-            i += 1
-        return ""
+        string = ""
+        if self.__width != 0 and self.__height != 0:
+            string += "\n".join("#" * self.__width for j in range(self.__height))
+        return string
 
     def __repr(self):
         """
