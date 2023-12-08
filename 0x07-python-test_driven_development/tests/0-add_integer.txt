@@ -34,11 +34,11 @@ checking for Only of arg:
 
 Checking for float with int
 	>>> add_integer(9.07, 88.79)
-	97.86
+	98
 	>>> add_integer(9.08, 10)
-	19.08
+	19
 	>>> add_integer(90, 1.32)
-	91.32
+	91
 
 Checking for passed String:
 	>>> add_integer("man")
