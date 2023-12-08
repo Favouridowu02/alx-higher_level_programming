@@ -12,7 +12,7 @@ Checking for the function docstring:
 	True
 
 Checking for module docstring:
-	>>> mod = __import("0-add_integer").__doc__
+	>>> mod = __import__("0-add_integer").__doc__
 	>>> len(mod) > 1
 	True
 

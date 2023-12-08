@@ -11,15 +11,16 @@ def matrix_divided(matrix, divi):
 
     for i in matrix:
         for j in i:
-            if type(i) is not int or float:
+            if type(i) is not int or type(i) is not float:
                 raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
         if len(i) is not len(matrix[0]):
             raise TypeError("Each row of the matrix must have the same size div")
         
-    type(div) is not int or float:
+    if type(div) is not int or type(div) is not float:
         raise TypeError("div must be a number")
     if div == 0:
         raise ZeroDivisionError("division by zero")
 
     list_t = list([lambda(x, i: round(i * 2) for i in x)], for x in matrix)
-    
+
+    return list_t
