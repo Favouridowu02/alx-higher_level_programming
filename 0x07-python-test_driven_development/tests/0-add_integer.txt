@@ -1,25 +1,47 @@
-# add_integer.py 
+The ``0-add_integer`` module
+============================
 
-"""
-This contains the doctest for 0-add_integer.py
+Using ``add_integer``
+---------------------
 
-Positive Number
+Importing the function from the module:
+	>>> add_integer = __import__("0-add_integer").add_integer
 
->>> add_integer = __import__("0-add_integer").add_integer
->>> add_integer(10, 5)
-15
->>> add_integer(100, 999)
-1099
->>> add_integer(5, 5)
-10
->>> add_integer(10)
-108
+Checking for the function docstring:
+	>>> len(add_integer.__doc__) > 1
+	True
 
-Negative Number
+Checking for module docstring:
+	>>> mod = __import("0-add_integer").__doc__
+	>>> len(mod) > 1
+	True
 
->>> add_integer(-10, -5)
--15
->>> add_integer(-10, 5)
--5
+Checking for addition:
+	>>> add_integer(5, 10)
+	15
 
-"""
+checking negative addition:
+	>>> add_integer(5, -10)
+	-5
+	>>> add_integer(-10, 5)
+	-5
+	>>> add_integer(-10, -5)
+	-15
+
+checking for Only of arg:
+	>>> add_integer(6)
+	104
+
+Checking for float with int
+	>>> add_integer(9.07, 88.79)
+	97.86
+	>>> add_integer(9.08, 10)
+	19.08
+	>>> add_integer(90, 1.32)
+	91.32
+
+Checking for passed String:
+	>>> add_integer("man")
+	Traceback (most recent calll last):
+	...
+	TypeError: a must be an integer

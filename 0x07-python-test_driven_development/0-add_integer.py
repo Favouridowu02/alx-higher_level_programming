@@ -14,7 +14,7 @@ def add_integer(a, b=98):
 
     try:
         if type(b) is str:
-            raise TypeError("b must be an integer")
+           raise TypeError("b must be an integer")
         if type(b) is float or int:
             b = int(b)
     except TypeError:

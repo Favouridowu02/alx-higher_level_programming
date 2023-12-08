@@ -1,0 +1,36 @@
+# add_integer.py 
+
+"""
+This contains the doctest for 0-add_integer.py
+
+Positive Number
+
+>>> add_integer = __import__("0-add_integer").add_integer
+>>> add_integer(10, 5)
+15
+>>> add_integer(100, 999)
+1099
+>>> add_integer(5, 5)
+10
+>>> add_integer(10)
+108
+
+No number
+`:x
+``
+>>> add_integer()
+Traceback (most recent call last):
+...
+TypeError: add_integer() missing 1 required positional argument: 'a'
+
+
+#NameError: name 'a' is not defined
+
+Negative Number
+
+>>> add_integer(-10, -5)
+-15
+>>> add_integer(-10, 5)
+-5
+
+"""
