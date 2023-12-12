@@ -18,11 +18,11 @@ class Rectangle:
         string = ""
         if self.__width != 0 and self.__height != 0:
             string += "\n".join("#" * self.__width
-                                    for j in range(self.__height))
+                                for j in range(self.__height))
         return string
 
     def __repr__(self):
-        """ 
+        """
         return a string representation of the rectangle to be able to recreate
         a new instance by using eval()
         """
