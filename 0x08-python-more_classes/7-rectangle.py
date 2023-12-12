@@ -3,11 +3,13 @@
 Defines a class Rectangle
 """
 
+
 class Rectangle:
     """Representation of a rectangle"""
 
-    number_of_instances = 0 
+    number_of_instances = 0
     print_symbol = "#"
+
     def __init__(self, width=0, height=0):
         """Initializes the rectangle"""
         self.height = height
@@ -21,11 +23,11 @@ class Rectangle:
         string = ""
         if self.__width != 0 and self.__height != 0:
             string += "\n".join(str(self.print_symbol) * self.__width
-                                    for j in range(self.__height))
+                                for j in range(self.__height))
         return string
 
     def __repr__(self):
-        """ 
+        """
         return a string representation of the rectangle to be able to recreate
         a new instance by using eval()
         """
@@ -70,7 +72,7 @@ class Rectangle:
         return (2 * self.width) + (2 * self.height)
 
     def __del__(self):
-        """ 
+        """
         Print the message Bye rectangle... (... being 3 dots not ellipsis) when
         an instance of Rectangle is deleted
         """
