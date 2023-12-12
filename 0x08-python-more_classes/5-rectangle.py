@@ -18,11 +18,11 @@ class Rectangle:
         string = ""
         if self.__width != 0 and self.__height != 0:
             string += "\n".join("#" * self.__width
-                                    for j in range(self.__height))
+                                for j in range(self.__height))
         return string
 
     def __repr__(self):
-        """ 
+        """
         return a string representation of the rectangle to be able to recreate
         a new instance by using eval()
         """
@@ -67,7 +67,7 @@ class Rectangle:
         return (2 * self.width) + (2 * self.height)
 
     def __del__(self):
-        """ 
+        """
         Print the message Bye rectangle... (... being 3 dots not ellipsis) when
         an instance of Rectangle is deleted
         """
