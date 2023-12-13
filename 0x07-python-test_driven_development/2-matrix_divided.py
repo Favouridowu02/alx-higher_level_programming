@@ -30,7 +30,7 @@ def matrix_divided(matrix, div):
             if type(elem) not in [int, float]:
                 raise TypeError(msg)
         if len(row) is not len(matrix[0]):
-            raise TypeError("Each row of the matrix must have the
+            raise TypeError("Each row of the matrix must have the\
                             same size div")
 
     if type(div) not in [int, float]:
@@ -38,5 +38,5 @@ def matrix_divided(matrix, div):
     if int(div) == 0:
         raise ZeroDivisionError("division by zero")
 
-    list_t = [[round(elem / div, 2) for elem in row] for row in matrix]
+    list_t = [[int(elem / div) for elem in row] for row in matrix]
     return list_t

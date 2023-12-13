@@ -7,7 +7,7 @@ Testing for All posible Cases using matrix_divided
 --------------------------------------------------
 
 Importing the function and the module
-	>>> from 2-matrix_divided import matrix_divided
+	>>> matrix_divided = __import__("2-matrix_divided").matrix_divided
 
 hecking for function docstring
 	
@@ -17,26 +17,25 @@ hecking for function docstring
 Checking for module docstring
 
 	>>> mod = __import__("2-matrix_divided").__doc__
-
 	>>> len(mod) > 1
 	True
 
 Checking for positive integers
 
 	>>> matrix = [[2, 4], [6, 8], [10, 12]]
-	... matrix_divided(matrix, 2)
+	>>> matrix_divided(matrix, 2)
 	[[1, 2], [3, 4], [5, 6]]
 
 checking for negative numbers
 
 	>>> matrix = [[2, 4], [6, 8], [10, 12]]
-	... matrix_divided(matrix, -2)
+	>>> matrix_divided(matrix, -2)
 	[[-1, -2], [-3, -4], [-5, -6]]
 
 checking for division by negative numbers
 
 	>>> matrix = [[3, 5], [7, 10], [8, 9]]
-	... matrix_divided(matrix, 888)
+	>>> matrix_divided(matrix, 888)
 	[[0, 0], [0, 0], [0, 0]]
 
 Testing how function handles list of None and Incorrect Type
@@ -45,6 +44,6 @@ Testing how function handles list of None and Incorrect Type
 	Traceback (most recent call last):
 	TypeError: matrix must be a matrix (list of lists) of integers/floats
 
-	>>> matrix_divided([["String"], ["here']], 2)
+	>>> matrix_divided([["String"], ["here"]], 2)
 	Traceback (most recent call last):
-	TypeError: matrix must be a matrix (list of lists) of integers/floats 
+	TypeError: matrix must be a matrix (list of lists) of integers/floats
