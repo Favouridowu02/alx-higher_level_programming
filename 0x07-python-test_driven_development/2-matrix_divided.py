@@ -1,15 +1,20 @@
 #!/usr/bin/python3
-""" This module contains the function matrix_divided which divides the matrix by div
+"""
+This module contains the function matrix_divided which divides the
+matrix by div
 """
 
+
 def matrix_divided(matrix, div):
-    """ a function that divides all elements of a matrix without making any edits
-    to the list itself
+    """
+    a function that divides all elements of a matrix without
+    making any edits to the list itself
 
     Arguments:
-        matr ix: the array to be divided
+        matr:x
+        ix: the array to be divided
         div: the divisor
-        
+
     Return: the value of the divided matrix
     """
 
@@ -25,8 +30,9 @@ def matrix_divided(matrix, div):
             if type(elem) not in [int, float]:
                 raise TypeError(msg)
         if len(row) is not len(matrix[0]):
-            raise TypeError("Each row of the matrix must have the same size div")
-        
+            raise TypeError("Each row of the matrix must have the
+                            same size div")
+
     if type(div) not in [int, float]:
         raise TypeError("div must be a number")
     if int(div) == 0:
