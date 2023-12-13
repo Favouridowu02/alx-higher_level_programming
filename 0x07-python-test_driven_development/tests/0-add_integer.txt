@@ -28,9 +28,21 @@ checking negative addition:
 	>>> add_integer(-10, -5)
 	-15
 
-checking for Only of arg:
-	>>> add_integer(6)
-	104
+checking one arg:
+	>>> add_integer(1)
+	99
+
+Checking no arg:
+	>>> add_integer()
+	Traceback (most recent call last):
+	...
+	TypeError: add_integer() missing 1 required positional argument: 'a'
+
+Checking more than 2 args:
+	>>> add_integer(1, 2, 3)
+	Traceback (most recent call last):
+	...
+	TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given
 
 Checking for float with int
 	>>> add_integer(9.07, 88.79)
@@ -42,6 +54,6 @@ Checking for float with int
 
 Checking for passed String:
 	>>> add_integer("man")
-	Traceback (most recent calll last):
+	Traceback (most recent call last):
 	...
 	TypeError: a must be an integer
