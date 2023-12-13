@@ -38,5 +38,5 @@ def matrix_divided(matrix, div):
     if int(div) == 0:
         raise ZeroDivisionError("division by zero")
 
-    list_t = [[int(elem / div) for elem in row] for row in matrix]
+    list_t = [[round((elem / div), 2) for elem in row] for row in matrix]
     return list_t
