@@ -69,3 +69,7 @@ Checking for None and NaN:
 	Traceback (most recent call last):
 	...
 	TypeError: a must be an integer
+	>>> add_integer(float('nan'))
+	Traceback (most recent call last):
+	...
+	ValueError: cannot convert float NaN to integer
