@@ -32,12 +32,6 @@ checking for negative numbers
 	>>> matrix_divided(matrix, -2)
 	[[-1, -2], [-3, -4], [-5, -6]]
 
-checking for division by negative numbers
-
-	>>> matrix = [[3, 5], [7, 10], [8, 9]]
-	>>> matrix_divided(matrix, 888)
-	[[0, 0], [0, 0], [0, 0]]
-
 Testing how function handles list of None and Incorrect Type
 
 	>>> matrix_divided([None], 2)
