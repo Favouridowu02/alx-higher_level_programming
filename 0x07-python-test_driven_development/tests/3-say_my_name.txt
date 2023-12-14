@@ -1,0 +1,69 @@
+``` 3-say_my_name.py```
+-----------------------
+
+==========================================================
+This Contains The different test Cases for the module above
+==========================================================
+
+Test Cases
+----------
+
+Importing the module:
+	>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+Checking for module documentation:
+	>>> mod = __import__("3-say_my_name").__doc__
+	>>> len(mod) > 1
+	True
+
+Checking for function documentation:
+	>>> len(say_my_name.__doc__) > 1
+	True
+
+Checking for one argument:
+	>>> say_my_name("Favour")
+	My name is Favour 
+
+Checking for two Arguments:
+	>>> say_my_name("Favour", "Idowu")
+	My name is Favour Idowu
+
+Checking for no arg:
+	>>> say_my_name()
+	Traceback (most recent call last):
+	...
+	TypeError: say_my_name() missing 1 required positional argument: 'first_name'
+
+Checking for None:
+	>>> say_my_name(None)
+	Traceback (most recent call last):
+	...
+	TypeError: first_name must be a string
+
+Checking for Numbers:
+	>>> say_my_name(777)
+	Traceback (most recent call last):
+	...
+	TypeError: first_name must be a string
+
+Checking using two Numbers:
+	>>> say_my_name(777, 888)
+	Traceback (most recent call last):
+	...
+	TypeError: first_name must be a string
+
+Checking using One Number and One string:
+	>>> say_my_name("Favour", 888)
+	Traceback (most recent call last):
+	...
+	TypeError: last_name must be a string
+
+Checking using float values:
+	>>> say_my_name(float('inf'))
+	Traceback (most recent call last):
+	...
+	TypeError: first_name must be a string
+
+=============
+end of case
+============= 
