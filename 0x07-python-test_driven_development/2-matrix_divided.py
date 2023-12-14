@@ -30,7 +30,7 @@ def matrix_divided(matrix, div):
             if type(elem) not in [int, float]:
                 raise TypeError(msg)
         if len(row) is not len(matrix[0]):
-            txt = "Each row of the matrix must have the same siz"
+            txt = "Each row of the matrix must have the same size"
             raise TypeError(txt)
 
     if type(div) not in [int, float]:
