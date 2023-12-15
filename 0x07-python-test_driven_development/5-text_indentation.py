@@ -6,7 +6,7 @@
 
 
 def text_indentation(text):
-    """ 
+    """
     a function that prints a text with 2 lines after each of these
     characters '.', '?' and ':'
 
@@ -26,4 +26,3 @@ def text_indentation(text):
             if text[i + 1] == " ":
                 i += 1
         i += 1
-        

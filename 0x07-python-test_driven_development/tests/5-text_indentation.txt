@@ -27,7 +27,8 @@ Checking for non String:
 Checking for String:
 	>>> text_indentation("hello. man")
 	hello.
-	 man
+	<BLANKLINE>
+	man
 
 Checking for two string
 	>>> text_indentation("hello ", "man")
@@ -39,4 +40,4 @@ Checking with no arg:
 	>>> text_indentation()
 	Traceback (most recent call last):
 	...
-	TypeError: text_indentation() missing 1 required positional argument: 'text' 
+	TypeError: text_indentation() missing 1 required positional argument: 'text'
