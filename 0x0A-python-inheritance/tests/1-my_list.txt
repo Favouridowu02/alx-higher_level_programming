@@ -1,0 +1,37 @@
+```1-my_list Module```
+----------------------
+===========================================================
+This Module Contains the different test cases for the above
+===========================================================
+
+Test Cases
+----------
+
+importing the Module:
+	>>> MyList = __import__('1-my_list').MyList
+
+Checking for Module Documentation:
+	>>> mod = __import__('1-my_list').__doc__
+	>>> len(mod) > 1
+	True
+
+Checking for Class Documentation:
+	>>> len(MyList.__doc__) > 1
+	True
+
+Checing for Function Documentation:
+	>>> func = MyList.print_sorted.__doc__
+	>>> len(func) > 1
+	True
+
+Checking for list length:
+	>>> boy = MyList()
+	>>> boy.extend([9, 10, 11])
+	>>> len(boy) == 3
+	True
+
+Checking by appending to the list:
+	>>> boy = MyList()
+	>>> boy.append(8)
+	>>> print(boy)
+	[8]
