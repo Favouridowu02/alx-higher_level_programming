@@ -5,6 +5,7 @@
     methods of the object obj
 """
 
+
 def lookup(obj):
     """
         This Function returns the list of available attributes and
