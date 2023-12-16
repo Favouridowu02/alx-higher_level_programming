@@ -7,7 +7,8 @@
 
 def is_same_class(obj, a_class):
     """
-        This Functin returns true if the obj is an instance of the class a_class
+        This Functin returns true if the obj is an instance of the
+        class a_class
 
         Arguments:
             obj: The instance of the object to check
