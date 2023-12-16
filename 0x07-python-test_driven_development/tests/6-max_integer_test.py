@@ -36,3 +36,14 @@ class TestCase(unittest.TestCase):
 
         self.assertEqual(max_integer([-1, -2, 0, -1]), 0)
         self.assertEqual(max_integer([-9, -8, 9, 0, -99]), 9)
+
+    def test_oneNumber(self):
+        """ Test Case for One Number """
+
+        self.assertEqual(max_integer([1]), 1)
+        self.assertEqual(max_integer([99]), 99)
+
+    def test_noarg(self):
+        """ Test Case for no argument """
+
+        self.assertIsNone(max_integer())
