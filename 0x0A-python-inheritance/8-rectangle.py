@@ -12,7 +12,7 @@ class Rectangle(BaseGeometry):
     def __init__(self, width, height):
         """
             This function is used for the instantiation of the class
-            
+
             Arguments:
                 width: the width
                 height: the height
