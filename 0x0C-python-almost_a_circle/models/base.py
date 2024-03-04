@@ -10,7 +10,7 @@ class Base:
     """
 
     __nb_objects = 0
-    
+
     def __init__(self, id=None):
         """
             This is the initialization of the Base Model Class
