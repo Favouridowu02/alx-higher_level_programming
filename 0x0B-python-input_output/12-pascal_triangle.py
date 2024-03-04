@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 """
     This Module is a technical session, I am ready to debug the task a hand,
-    It contains a function that returns a list of  lists of integers representing
-    the pascal triangle of n
+    It contains a function that returns a list of  lists of integers
+    representing the pascal triangle of n
 """
+
 
 def pascal_triangle(n):
     """
