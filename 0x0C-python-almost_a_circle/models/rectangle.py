@@ -28,3 +28,44 @@ class Rectangle(Base):
         self.__height = height
         self.__x = x
         self.__y = y
+
+    @property
+    def width(self):
+        """ This is the getter function for width"""
+        return self.__width
+
+    @width.setter
+    def width(self, width):
+        """ This is the setter function for width """
+        self.__width = width
+
+    @property
+    def height(self):
+        """ This is the getter function for height"""
+        return self.__height
+
+    @height.setter
+    def height(self, height):
+        """ This is the setter function for height"""
+        self.__height = height
+
+    @property
+    def x(self):
+        """ This is the getter function for x"""
+        return self.__x
+
+    @x.setter
+    def x(self, x):
+        """ This is the setter function for x"""
+        self.__x = x
+
+    @property
+    def y(self):
+        """ This is the getter function y"""
+        return self.__y
+
+    @y.setter
+    def y(self, y):
+        """ This is the setter function y"""
+        self.__y = y
+
