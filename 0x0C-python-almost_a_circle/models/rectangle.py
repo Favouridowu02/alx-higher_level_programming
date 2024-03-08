@@ -14,7 +14,7 @@ class Rectangle(Base):
     def __init__(self, width, height, x=0, y=0, id=None):
         """
             This is the initialization of the Rectangle Class
-            
+
             Arguments:
                 Width: the width
                 Height: The height
@@ -40,7 +40,7 @@ class Rectangle(Base):
         if type(width) != int:
             raise TypeError("width must be integer")
         if width <= 0:
-            raise ValueError("width must be > 0")   
+            raise ValueError("width must be > 0")
         self.__width = width
 
     @property
