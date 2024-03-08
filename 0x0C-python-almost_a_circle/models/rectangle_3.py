@@ -98,13 +98,8 @@ class Rectangle(Base):
         """
         width = self.__width
         height = self.__height
-        x = self.__x
-        y = self.__y
 
-        for i in range(0, y):
-            print()
         for i in range(0, height):
-            print(" " * x,end="")
             print("#" * width)
 
     def __str__(self):
