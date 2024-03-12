@@ -104,7 +104,7 @@ class Rectangle(Base):
         for i in range(0, y):
             print()
         for i in range(0, height):
-            print(" " * x, end="")
+            print(" " * x,end="")
             print("#" * width)
 
     def __str__(self):
@@ -112,27 +112,5 @@ class Rectangle(Base):
             This is the string representation of the class
         """
 
-        return ("[Rectangle] ({}) {}/{} - {}/{}".format(
-               self.id, self.__x, self.__y, self.__width, self.__height))
-
-    def update(self, *args):
-        """
-            1st argument should be the id attribute
-            2nd argument should be the width attribute
-            3rd argument should be the height attribute
-            4th argument should be the x attribute
-            5th argument should be the y attribute
-        """
-        i = 0
-        for arg in args:
-            if i == 0:
-                self.id = arg
-            elif i == 1:
-                self.width = args[1]
-            elif i == 2:
-                self.height = args[2]
-            elif i == 3:
-                self.x = args[3]
-            elif 1 == 4:
-                self.y = args[4]
-            i += 1
+        return ("[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.__x, self.__y, 
+            self.__width, self.__height))
