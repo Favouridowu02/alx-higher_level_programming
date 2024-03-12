@@ -115,49 +115,24 @@ class Rectangle(Base):
         return ("[Rectangle] ({}) {}/{} - {}/{}".format(
                self.id, self.__x, self.__y, self.__width, self.__height))
 
-    def update(self, *args, **kwargs):
+    def update(self, *args):
         """
-        Args:
-            *args(ints): New attribute values
-
             1st argument should be the id attribute
             2nd argument should be the width attribute
             3rd argument should be the height attribute
             4th argument should be the x attribute
             5th argument should be the y attribute
-            
-            **kwargs(dict): New key/value pairs of attributes
         """
-        if args and len(args) != 0:
-            a = 0
-            for arg in args:
-                if a == 0:
-                    if arg is None:
-                        self.__init__(self.width, self.height, self.x, self.y)
-                    else:
-                        self.id = arg
-                elif a == 1:
-                    self.width = arg
-                elif a == 2:
-                    self.height = arg
-                elif a == 3:
-                    self.x = arg
-                elif a == 4:
-                    self.y = arg
-                a += 1
-
-        elif kwargs and len(kwargs) != 0:
-            for k, v in kwargs.items():
-                if k == "id":
-                    if v is None:
-                        self.__init__(self.width, self.height, self.x, self.y)
-                    else:
-                        self.id = v
-                elif k == "width":
-                    self.width = v
-                elif k == "height":
-                    self.height = v
-                elif k == "x":
-                    self.x = v
-                elif k == "y":
-                    self.y = v
+        i = 0
+        for arg in args:
+            if i == 0:
+                self.id = arg
+            elif i == 1:
+                self.width = args[1]
+            elif i == 2:
+                self.height = args[2]
+            elif i == 3:
+                self.x = args[3]
+            elif 1 == 4:
+                self.y = args[4]
+            i += 1
