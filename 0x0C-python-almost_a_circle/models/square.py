@@ -16,8 +16,8 @@ class Square(Rectangle):
 
     def __init__(self, size, x=0, y=0, id=None):
         """
-        This is the initialization of the square class 
-        
+        This is the initialization of the square class
+
         Arg:
             size: The size of the square
             x: the x-axis co-ordinate
@@ -31,4 +31,4 @@ class Square(Rectangle):
             This is the string Representation of Class
         """
         return "[Square] ({}) {}/{} - {}".format(self.id,
-                self.x, self.y, self.width)
+                                                 self.x, self.y, self.width)
