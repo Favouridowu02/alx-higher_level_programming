@@ -35,8 +35,7 @@ class Base:
 
             Otherwise, return the JSON string representation of list_dictionaries
         """
+        import json
         if list_dictionaries is None:
             return "[]"
         return json.dumps(list_dictionaries)
-
-    def __str__(self):
