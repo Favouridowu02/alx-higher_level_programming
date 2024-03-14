@@ -26,9 +26,24 @@ class Square(Rectangle):
         """
         super().__init__(self, size, size, x, y, id)
 
+    @property
+    def size(self):
+        """
+            This function returns the size of the house
+        """
+        return size (self.size)
+
+    @size.setter
+    def size(self, size):
+        """
+            This is the setter functon for the size
+        """
+        self.width = size
+        self.height = size
+
     def __str__(self):
         """
             This is the string Representation of Class
         """
-        return "[Square] ({}) {}/{} - {}".format(self.id,
-                                                 self.x, self.y, self.width)
+        return "[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y,
+                                                self.width)
