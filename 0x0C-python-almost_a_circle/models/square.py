@@ -31,7 +31,7 @@ class Square(Rectangle):
         """
             This function returns the size of the house
         """
-        return size (self.size)
+        return (self.size)
 
     @size.setter
     def size(self, size):
@@ -46,4 +46,4 @@ class Square(Rectangle):
             This is the string Representation of Class
         """
         return "[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y,
-                                                self.width)
+                                                 self.width)
