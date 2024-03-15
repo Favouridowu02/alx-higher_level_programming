@@ -2,6 +2,9 @@
 """
     This Module contains a Base Class Module
 """
+import json
+import csv
+import turtle
 
 
 class Base:
@@ -76,7 +79,7 @@ class Base:
             **dictionary (dict): Key/value pairs of attributes to initialize.
         """
         if dictionary and dictionary != {}:
-            if cls.__name__ = Rectangle:
+            if cls.__name__ = "Rectangle":
                 rec = cls(1, 1)
             else:
                 rec = cls(1)
@@ -99,3 +102,25 @@ class Base:
         except IOError:
             return []
 
+    @classmethod
+    def load_from_file_csv(cls):
+        """
+            Return a list of classes instantiated from a csv file
+            Reads from `<cls.__name>.csv`
+            Returns:
+                If the file does not exist - an empty list
+                Otherwise - a list of instantiated classes.
+        """
+        filename = str(cls.__name__) + ".json"
+        try:
+            with open(filename, "r", newline="") as csv_file:
+                if cls.__name__ == "Rectangle":
+                    fieldnames = ["id", "width", "height", "x", "y"]
+                else:
+                    fieldnames = ["id", "size", "x", "y"]
+                list_dicts = csv.DictReader(csvfile, fieldnames=fieldnames)
+                list_dicts = [dict([k, int(v)] for k, v in d.items())
+                              for d in list_dicts]
+                return [cls.create(**d) for d in list_dicts]
+        except IOError:
+            return []
