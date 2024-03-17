@@ -68,7 +68,7 @@ class Base:
             If json_string is None or empty - an empty list.
             Otherwise - the Python list represented by json_string.
         """
-        if json_string is None or json_string == "[]"
+        if json_string is None or json_string == "[]":
             return []
         return json.loads(json_string)
 
@@ -79,7 +79,7 @@ class Base:
             **dictionary (dict): Key/value pairs of attributes to initialize.
         """
         if dictionary and dictionary != {}:
-            if cls.__name__ = "Rectangle":
+            if cls.__name__ == "Rectangle":
                 rec = cls(1, 1)
             else:
                 rec = cls(1)
