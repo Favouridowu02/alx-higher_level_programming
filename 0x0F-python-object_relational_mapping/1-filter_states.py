@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-
+"""
+    This Module contains a script for listing all states that
+    starts with N
+"""
 if __name__ == "__main__":
     from sys import argv
 
