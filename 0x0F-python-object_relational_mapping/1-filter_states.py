@@ -3,10 +3,9 @@
     This Module contains a script for listing all states that
     starts with N
 """
+import MySQLdb
 if __name__ == "__main__":
     from sys import argv
-
-    import MySQLdb
 
 # Ensure the arguments a 3"
     if len(argv) != 4:
