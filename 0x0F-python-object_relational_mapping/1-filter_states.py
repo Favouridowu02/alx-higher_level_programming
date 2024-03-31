@@ -5,8 +5,7 @@ if __name__ == "__main__":
 
     import MySQLdb
 
-
-    # Ensure the arguments a 3"
+# Ensure the arguments a 3"
     if len(argv) != 4:
         print("Usage: python 0-select_states.py username password dbname")
         exit(1)
