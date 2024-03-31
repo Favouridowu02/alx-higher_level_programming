@@ -15,7 +15,7 @@ if __name__ == "__main__":
             host="localhost",
             port=3306);
     c = db.cursor()
-    c.execute("SELECT id, name FROM states WHERE name = '{}' ORDER BY id".format(argv[4]))
+    c.execute("SELECT id, name FROM states WHERE name LIKE BINARY '{}' ORDER BY id".format(argv[4]))
 
     rows = c.fetchall()
     for row in rows:
