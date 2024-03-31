@@ -4,14 +4,10 @@
     starts with N
 """
 import MySQLdb
+from sys import argv
+
 if __name__ == "__main__":
-    from sys import argv
-
 # Ensure the arguments a 3"
-    if len(argv) != 4:
-        print("Usage: python 0-select_states.py username password dbname")
-        exit(1)
-
     db = MySQLdb.connect(
             host="localhost",
             user=argv[1],
