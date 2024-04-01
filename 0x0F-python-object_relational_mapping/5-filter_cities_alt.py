@@ -21,7 +21,13 @@ if __name__ == "__main__":
                states AS s ON c.state_id = s.id WHERE s.name \
                = %s", (match,))
     rows = c.fetchall()
-    temp = list(row[0] for row in rows)
-    print(*temp, sep=", ")
+    row_length = len(rows)
+    for row in rows:
+        for column in row:
+            print(column, end="")
+            if row is not rows[row_length - 1]:
+                print(" ,", end="")
+            else:
+                print()
     c.close()
     db.close()
