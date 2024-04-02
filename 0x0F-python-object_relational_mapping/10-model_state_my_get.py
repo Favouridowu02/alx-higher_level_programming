@@ -14,8 +14,6 @@ if __name__ == "__main__":
     Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
     session = Session()
-
-    substring = argv[4]
     row = session.query(State).filter(State.name == (argv[4],))
     if row is None:
         print("Not found")
