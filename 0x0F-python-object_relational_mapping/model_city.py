@@ -6,6 +6,7 @@
 from model_state import Base
 from sqlalchemy import Column, Integer, String, ForeignKey
 
+
 class City(Base):
     """
         Inherits from Base
