@@ -13,10 +13,10 @@ if __name__ == "__main__":
                            .format(argv[1], argv[2], argv[3]))
     Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
-    session = Session()
-
+    session=Session()
+    
     substring = argv[4]
-    row = session.query(State).filter(State.name == (argv[4],))
+    row = session.query(State).filter(State.name.like(f"%{substring}%"))
     if row is None:
         print("Not found")
     else:
