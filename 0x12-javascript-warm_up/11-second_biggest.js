@@ -5,8 +5,8 @@ if (argv[2] === undefined || isNaN(argv[2]) === true) {
 } else {
   let num = 0;
   let num2 = 0;
-  for (let i = 2; i <= argv.length; i++) {
-    if (num < argv[i]) {
+  for (let i = 2; i < argv.length; i++) {
+    if (num <= Number(argv[i])) {
       num2 = num;
       num = Number(argv[i]);
     }
