@@ -9,8 +9,9 @@ if (argv.length <= 3) {
     if (num <= Number(argv[i])) {
       num2 = num;
       num = Number(argv[i]);
-    } else if (Number(argv[i]) > num2  && Number(argv[i] < num) {
+    } else if (Number(argv[i]) > num2  && Number(argv[i]) < num) {
       num2 = Number(argv[i]);
+    }
   }
   console.log(num2);
 }
