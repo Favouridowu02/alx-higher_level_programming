@@ -2,13 +2,14 @@
 const { argv } = require('node:process');
 if (argv[2] === undefined || isNaN(argv[2]) === true) {
   console.log(0);
-}
-else {
+} else {
   let num = 0;
-  for ( i = 2; i <= argv.length; i++) {
+  let num2 = 0;
+  for (let i = 2; i <= argv.length; i++) {
     if (num < argv[i]) {
+      num2 = num;
       num = argv[i];
     }
   }
-  console.log(num - 1);
+  console.log(num2);
 }
