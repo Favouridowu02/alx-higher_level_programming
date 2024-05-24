@@ -1,6 +1,6 @@
 #!/usr/bin/node
 const { argv } = require('node:process');
-if (argv[2] === undefined || isNaN(argv[2]) === true) {
+if (argv.length <= 3) {
   console.log(0);
 } else {
   let num = 0;
@@ -9,7 +9,8 @@ if (argv[2] === undefined || isNaN(argv[2]) === true) {
     if (num <= Number(argv[i])) {
       num2 = num;
       num = Number(argv[i]);
-    }
+    } else if (Number(argv[i]) > num2  && Number(argv[i] < num) {
+      num2 = Number(argv[i]);
   }
   console.log(num2);
 }
