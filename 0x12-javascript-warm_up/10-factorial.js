@@ -3,9 +3,9 @@ const { argv } = require('node:process');
 if (argv[2] === undefined || isNaN(argv[2]) === true) {
   console.log(1);
 } else {
-  function fact(num) {
-    if (num === 1 || num === 0) {
-  	  return (1);
+    function fact(num) {
+      if (num === 1 || num === 0) {
+    	  return (1);
     }
     return (num * fact(num - 1));
   }
