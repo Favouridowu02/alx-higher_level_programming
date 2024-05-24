@@ -8,7 +8,7 @@ if (argv[2] === undefined || isNaN(argv[2]) === true) {
   for (let i = 2; i <= argv.length; i++) {
     if (num < argv[i]) {
       num2 = num;
-      num = argv[i];
+      num = Number(argv[i]);
     }
   }
   console.log(num2);
