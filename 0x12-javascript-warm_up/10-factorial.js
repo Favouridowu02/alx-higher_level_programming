@@ -6,8 +6,8 @@ if (argv[2] === undefined || isNaN(argv[2]) === true) {
     function fact(num) {
       if (num === 1 || num === 0) {
     	  return (1);
+      }
+      return (num * fact(num - 1));
     }
-    return (num * fact(num - 1));
-  }
   console.log(fact(argv[2]));
 }
