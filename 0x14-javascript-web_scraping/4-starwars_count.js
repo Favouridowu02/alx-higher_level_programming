@@ -7,7 +7,7 @@ request(uri, { json: true }, function (error, response, body) {
     console.error(error);
   }
   let number = 0;
-  const count = Number(body.count);
+  const count = Number(body.results.length);
   for (let i = 0; i < count; i++) {
     if (body.results[i].characters.toString().includes('18')) {
       number++;
