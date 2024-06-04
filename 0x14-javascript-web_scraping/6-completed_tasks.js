@@ -19,5 +19,5 @@ request(uri, (error, response, body) => {
       }
     }
   }
-  console.log(newObj);
+  console.log(JSON.stringify(newObj));
 });
