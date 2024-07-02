@@ -1,5 +1,5 @@
 const $ = window.$;
-$('document').ready(function () {
+$(document).ready(function () {
   const url = 'https://hellosalut.stefanbohacek.dev/?lang=';
   $('INPUT#btn_translate').click(function () {
     const value = $('INPUT#language_code').val();
