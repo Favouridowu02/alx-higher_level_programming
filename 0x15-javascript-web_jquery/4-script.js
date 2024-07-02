@@ -1,4 +1,3 @@
-#!/usr/bin/node
 const $ = window.$;
 $('DIV#toggle_header').click(function () {
   if ($('header').hasClass('red')) {
