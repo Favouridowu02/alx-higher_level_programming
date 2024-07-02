@@ -1,2 +1,5 @@
 #!/usr/bin/node
-$('header').click(function () {$('header').css({'color': '#FF0000'})});
+const $ = window.$;
+$('DIV#red_header').click(function () {
+  $('header').css('color', '#FF0000');
+});
